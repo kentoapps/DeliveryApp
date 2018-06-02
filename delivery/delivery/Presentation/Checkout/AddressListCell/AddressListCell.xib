@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="AddressListCell" customModule="delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="160.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkZ-1f-7Dt">
+                        <rect key="frame" x="50" y="10" width="300" height="140.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBY-zE-UWY">
+                                <rect key="frame" x="16" y="12" width="295" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcU-vN-3Vn">
+                                <rect key="frame" x="16" y="48" width="295" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZipCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymy-SD-MYG">
+                                <rect key="frame" x="16" y="72" width="276" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-pd-Lti" userLabel="Delete">
+                                <rect key="frame" x="150" y="101" width="150" height="39.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fCv-Aw-WK4"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe0-oU-wgf" userLabel="Edit">
+                                <rect key="frame" x="0.0" y="101" width="150" height="39.5"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.13725490200000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="RAA-jD-FmB"/>
+                                </constraints>
+                                <state key="normal" title="Edit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89828271339999999" green="0.89719402790000002" blue="0.90917677350000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ymy-SD-MYG" firstAttribute="top" secondItem="XcU-vN-3Vn" secondAttribute="bottom" constant="7" id="2Xf-1x-iPw"/>
+                            <constraint firstItem="qe0-oU-wgf" firstAttribute="top" secondItem="Ymy-SD-MYG" secondAttribute="bottom" constant="12" id="5ea-rV-QBr"/>
+                            <constraint firstItem="Ymy-SD-MYG" firstAttribute="leading" secondItem="IkZ-1f-7Dt" secondAttribute="leading" constant="16" id="5hE-Ud-Nrl"/>
+                            <constraint firstAttribute="bottom" secondItem="qe0-oU-wgf" secondAttribute="bottom" id="7p8-Vm-uWr"/>
+                            <constraint firstItem="TBY-zE-UWY" firstAttribute="leading" secondItem="IkZ-1f-7Dt" secondAttribute="leading" constant="16" id="C3h-4C-4eE"/>
+                            <constraint firstItem="zzt-pd-Lti" firstAttribute="top" secondItem="Ymy-SD-MYG" secondAttribute="bottom" constant="12" id="GLd-lN-Hq5"/>
+                            <constraint firstAttribute="trailing" secondItem="zzt-pd-Lti" secondAttribute="trailing" id="J0D-xz-FKm"/>
+                            <constraint firstAttribute="trailing" secondItem="Ymy-SD-MYG" secondAttribute="trailing" constant="8" id="Nax-W8-54I"/>
+                            <constraint firstAttribute="width" constant="300" id="PG6-Sm-VWf"/>
+                            <constraint firstItem="XcU-vN-3Vn" firstAttribute="leading" secondItem="IkZ-1f-7Dt" secondAttribute="leading" constant="16" id="S6c-jm-Nup"/>
+                            <constraint firstAttribute="trailing" secondItem="XcU-vN-3Vn" secondAttribute="trailing" constant="-11" id="bdi-rr-ceT"/>
+                            <constraint firstItem="qe0-oU-wgf" firstAttribute="leading" secondItem="IkZ-1f-7Dt" secondAttribute="leading" id="dxK-vw-Yc5"/>
+                            <constraint firstItem="XcU-vN-3Vn" firstAttribute="top" secondItem="TBY-zE-UWY" secondAttribute="bottom" constant="16" id="e8e-Rk-Wng"/>
+                            <constraint firstAttribute="trailing" secondItem="TBY-zE-UWY" secondAttribute="trailing" constant="-11" id="lVp-jc-jfb"/>
+                            <constraint firstAttribute="bottom" secondItem="zzt-pd-Lti" secondAttribute="bottom" id="oB0-kW-d3U"/>
+                            <constraint firstItem="TBY-zE-UWY" firstAttribute="top" secondItem="IkZ-1f-7Dt" secondAttribute="top" constant="12" id="xEh-Qh-XOU"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBK-w0-ktV">
+                        <rect key="frame" x="15" y="70" width="20" height="22"/>
+                        <state key="normal" image="radio_off"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sBK-w0-ktV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F1X-gK-0VQ"/>
+                    <constraint firstItem="sBK-w0-ktV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SDl-2n-wgy"/>
+                    <constraint firstItem="IkZ-1f-7Dt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WdA-HF-SrK"/>
+                    <constraint firstItem="IkZ-1f-7Dt" firstAttribute="leading" secondItem="sBK-w0-ktV" secondAttribute="trailing" constant="15" id="bia-HD-Yds"/>
+                    <constraint firstAttribute="trailing" secondItem="IkZ-1f-7Dt" secondAttribute="trailing" constant="15" id="iog-LO-SAh"/>
+                    <constraint firstAttribute="bottom" secondItem="IkZ-1f-7Dt" secondAttribute="bottom" constant="10" id="o39-jS-RIu"/>
+                    <constraint firstItem="IkZ-1f-7Dt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vvO-bQ-VK2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="XcU-vN-3Vn" id="vBn-L7-1tH"/>
+                <outlet property="deleteButton" destination="zzt-pd-Lti" id="ub5-61-dcj"/>
+                <outlet property="editButton" destination="qe0-oU-wgf" id="ozQ-jF-DIg"/>
+                <outlet property="radioButton" destination="sBK-w0-ktV" id="5bP-XX-nZM"/>
+                <outlet property="receiverLabel" destination="TBY-zE-UWY" id="NNl-Si-1bP"/>
+                <outlet property="zipCodeLabel" destination="Ymy-SD-MYG" id="LKH-lJ-YT5"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="50.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_off" width="16" height="16"/>
+    </resources>
+</document>

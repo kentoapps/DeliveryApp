@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VRV-DF-WLx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Info Edit View Controller-->
+        <scene sceneID="3hf-22-fWL">
+            <objects>
+                <viewController id="VRV-DF-WLx" customClass="UserInfoEditViewController" customModule="delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tag-Zl-oeH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-pw-Tmc">
+                                <rect key="frame" x="22" y="38" width="331" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="GYo-4m-qbT"/>
+                                    <constraint firstAttribute="height" constant="45" id="eac-Vc-5X2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-lO-kFb">
+                                <rect key="frame" x="22" y="82" width="331" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6Vp-pW-QBd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-oE-VHa">
+                                <rect key="frame" x="22" y="126" width="331" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LAd-pZ-0aB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-Ot-IiF">
+                                <rect key="frame" x="22" y="170" width="331" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hK7-Ps-K5a"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dxb-pw-Tmc" firstAttribute="leading" secondItem="afQ-MO-lRK" secondAttribute="leading" constant="22" id="40B-a4-k6p"/>
+                            <constraint firstItem="afQ-MO-lRK" firstAttribute="trailing" secondItem="F8q-Ot-IiF" secondAttribute="trailing" constant="22" id="9J9-6x-GSc"/>
+                            <constraint firstItem="sDe-oE-VHa" firstAttribute="top" secondItem="xV9-lO-kFb" secondAttribute="bottom" constant="-1" id="IZr-o2-nFT"/>
+                            <constraint firstItem="afQ-MO-lRK" firstAttribute="trailing" secondItem="sDe-oE-VHa" secondAttribute="trailing" constant="22" id="M5o-4n-9EM"/>
+                            <constraint firstItem="F8q-Ot-IiF" firstAttribute="top" secondItem="sDe-oE-VHa" secondAttribute="bottom" constant="-1" id="X87-Ip-X3a"/>
+                            <constraint firstItem="xV9-lO-kFb" firstAttribute="leading" secondItem="afQ-MO-lRK" secondAttribute="leading" constant="22" id="YoN-Yp-ZgD"/>
+                            <constraint firstItem="F8q-Ot-IiF" firstAttribute="leading" secondItem="afQ-MO-lRK" secondAttribute="leading" constant="22" id="aDk-4H-1w4"/>
+                            <constraint firstItem="xV9-lO-kFb" firstAttribute="top" secondItem="dxb-pw-Tmc" secondAttribute="bottom" constant="-1" id="aS0-iX-uy5"/>
+                            <constraint firstItem="dxb-pw-Tmc" firstAttribute="top" secondItem="afQ-MO-lRK" secondAttribute="top" constant="18" id="cLa-BG-zVq"/>
+                            <constraint firstItem="afQ-MO-lRK" firstAttribute="trailing" secondItem="xV9-lO-kFb" secondAttribute="trailing" constant="22" id="gGS-YI-nLd"/>
+                            <constraint firstItem="afQ-MO-lRK" firstAttribute="trailing" secondItem="dxb-pw-Tmc" secondAttribute="trailing" constant="22" id="oGf-4T-Fcz"/>
+                            <constraint firstItem="sDe-oE-VHa" firstAttribute="leading" secondItem="afQ-MO-lRK" secondAttribute="leading" constant="22" id="uPe-0p-XhJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="afQ-MO-lRK"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="F8q-Ot-IiF" id="qK0-lO-li1"/>
+                        <outlet property="firstNameLabel" destination="dxb-pw-Tmc" id="SBX-38-IZt"/>
+                        <outlet property="lastNameLabel" destination="xV9-lO-kFb" id="rrP-ad-cJ8"/>
+                        <outlet property="phoneNumberLabel" destination="sDe-oE-VHa" id="CJg-M1-zO0"/>
+                        <outletCollection property="userInfoTextFields" destination="sDe-oE-VHa" collectionClass="NSMutableArray" id="0yA-3e-aXb"/>
+                        <outletCollection property="userInfoTextFields" destination="F8q-Ot-IiF" collectionClass="NSMutableArray" id="aLD-Db-MKJ"/>
+                        <outletCollection property="userInfoTextFields" destination="xV9-lO-kFb" collectionClass="NSMutableArray" id="LB0-pT-WGC"/>
+                        <outletCollection property="userInfoTextFields" destination="dxb-pw-Tmc" collectionClass="NSMutableArray" id="rjQ-Wa-ZAA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1J-OE-fqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>

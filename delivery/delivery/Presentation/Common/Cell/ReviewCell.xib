@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="213" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="212.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKZ-BJ-tKJ">
+                        <rect key="frame" x="20" y="11" width="317" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Kento Uchida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ9-Bo-WYm">
+                        <rect key="frame" x="20" y="40" width="126" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBf-xk-nFE">
+                        <rect key="frame" x="20" y="69" width="404" height="123.5"/>
+                        <string key="text">No – one gets an iron – clad guarantee of success. Certainly, factors like opportunity, luck and timing are important. But the backbone of success is usually found in old – fashioned, basic concepts like hard work, determination, good planning and perseverance.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/3/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-lw-lfL">
+                        <rect key="frame" x="344.5" y="11" width="79.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yU6-32-Hop" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="154" y="40" width="120" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.38823529410000002" green="0.68627450980000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="0.38823529410000002" green="0.68627450980000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sBf-xk-nFE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="1B1-8s-W3o"/>
+                    <constraint firstItem="LKZ-BJ-tKJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7xq-X8-vil"/>
+                    <constraint firstItem="sBf-xk-nFE" firstAttribute="top" secondItem="qQ9-Bo-WYm" secondAttribute="bottom" constant="8" id="ENe-lP-Guk"/>
+                    <constraint firstAttribute="trailing" secondItem="sBf-xk-nFE" secondAttribute="trailing" constant="20" symbolic="YES" id="F0I-Z3-MZs"/>
+                    <constraint firstItem="LKZ-BJ-tKJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Fnr-1D-CcT"/>
+                    <constraint firstItem="qQ9-Bo-WYm" firstAttribute="top" secondItem="LKZ-BJ-tKJ" secondAttribute="bottom" constant="8" id="GVW-yj-rdu"/>
+                    <constraint firstItem="qQ9-Bo-WYm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HEd-OL-7az"/>
+                    <constraint firstItem="yU6-32-Hop" firstAttribute="centerY" secondItem="qQ9-Bo-WYm" secondAttribute="centerY" id="Npm-u9-Uee"/>
+                    <constraint firstItem="cRG-lw-lfL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="U3m-97-DN2"/>
+                    <constraint firstItem="cRG-lw-lfL" firstAttribute="leading" secondItem="LKZ-BJ-tKJ" secondAttribute="trailing" constant="7.5" id="bJq-K9-dcM"/>
+                    <constraint firstItem="yU6-32-Hop" firstAttribute="leading" secondItem="qQ9-Bo-WYm" secondAttribute="trailing" constant="8" id="h1p-mu-bRT"/>
+                    <constraint firstItem="cRG-lw-lfL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hIp-Fk-uu5"/>
+                    <constraint firstAttribute="bottom" secondItem="sBf-xk-nFE" secondAttribute="bottom" constant="20" symbolic="YES" id="lGY-br-1N3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="sBf-xk-nFE" id="u3s-Oy-ntM"/>
+                <outlet property="titleLabel" destination="LKZ-BJ-tKJ" id="jK5-EO-FsG"/>
+                <outlet property="userNameLabel" destination="qQ9-Bo-WYm" id="h5T-LF-8PL"/>
+            </connections>
+            <point key="canvasLocation" x="-83" y="302"/>
+        </tableViewCell>
+    </objects>
+</document>

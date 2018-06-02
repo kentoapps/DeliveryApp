@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.4'
+use_frameworks!
+target 'delivery' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+  # RxSwift  
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxDataSources', '~> 3.0'
+  
+  # Swinject
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
+
+  # Firebase
+  pod 'Firebase/Core', '4.8.2'
+  pod 'Firebase/Firestore', '4.8.2'
+  pod 'Firebase/Auth', '4.8.2'
+  
+  # View
+  pod 'Cosmos', '~> 15.0'
+
+  # Image
+  pod 'Kingfisher', '~> 4.0'
+  
+  # Payment
+  pod 'Stripe'
+  pod 'Alamofire', '~> 4.7'
+  
+  # RxRealm - Offline database
+  pod 'RxRealm'
+  
+  #UISlider
+  pod 'RangeSeekSlider'
+end
+
+target 'deliveryTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+
+    pod 'Firebase/Core', '4.8.2'
+    pod 'Firebase/Firestore', '4.8.2'
+end
+

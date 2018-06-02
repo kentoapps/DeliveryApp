@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="44I-Ty-3UJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Address List View Controller-->
+        <scene sceneID="Vk9-5T-e1f">
+            <objects>
+                <viewController id="44I-Ty-3UJ" customClass="AddressListViewController" customModule="delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHR-Rd-Bd7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iTB-TH-o3K">
+                                <rect key="frame" x="0.0" y="38" width="375" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pZ-Pb-N5g">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsN-Pk-qih">
+                                        <rect key="frame" x="168" y="10.5" width="39" height="39"/>
+                                        <state key="normal" image="new"/>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="44I-Ty-3UJ" eventType="touchUpInside" id="N0d-3H-a5r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EsN-Pk-qih" firstAttribute="centerY" secondItem="0pZ-Pb-N5g" secondAttribute="centerY" id="H0S-jj-r6m"/>
+                                    <constraint firstAttribute="height" constant="60" id="PtW-du-Cu9"/>
+                                    <constraint firstItem="EsN-Pk-qih" firstAttribute="centerX" secondItem="0pZ-Pb-N5g" secondAttribute="centerX" id="e7L-pA-lQQ"/>
+                                    <constraint firstAttribute="width" constant="375" id="jSF-J8-G2A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="top" secondItem="iTB-TH-o3K" secondAttribute="bottom" id="6NS-Pu-cvU"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="trailing" secondItem="bh2-R2-VMc" secondAttribute="trailing" id="9oI-cm-NsR"/>
+                            <constraint firstItem="iTB-TH-o3K" firstAttribute="trailing" secondItem="bh2-R2-VMc" secondAttribute="trailing" id="C3k-Pe-M2M"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="bottom" secondItem="bh2-R2-VMc" secondAttribute="bottom" id="Ug0-k4-au2"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="trailing" secondItem="bh2-R2-VMc" secondAttribute="trailing" id="UvF-hY-i62"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="leading" secondItem="bh2-R2-VMc" secondAttribute="leading" id="YwG-Tg-FEm"/>
+                            <constraint firstItem="iTB-TH-o3K" firstAttribute="leading" secondItem="bh2-R2-VMc" secondAttribute="leading" id="dfi-wK-ctu"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="bottom" secondItem="bh2-R2-VMc" secondAttribute="bottom" id="g8N-zM-bOp"/>
+                            <constraint firstItem="iTB-TH-o3K" firstAttribute="top" secondItem="bh2-R2-VMc" secondAttribute="top" constant="18" id="vCt-BT-dgt"/>
+                            <constraint firstItem="0pZ-Pb-N5g" firstAttribute="leading" secondItem="bh2-R2-VMc" secondAttribute="leading" id="yHG-yu-92J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bh2-R2-VMc"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressTableView" destination="iTB-TH-o3K" id="kNj-GJ-SVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bu9-wO-QKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.8000000000000007" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="new" width="39" height="39"/>
+    </resources>
+</document>

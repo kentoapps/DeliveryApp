@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5V-H2-qQ3">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Order"/>
+                                <connections>
+                                    <action selector="orderButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaQ-eK-NqE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-Eh-Ako">
+                                <rect key="frame" x="156" y="50" width="63" height="30"/>
+                                <state key="normal" title="go Home"/>
+                                <connections>
+                                    <action selector="goHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Viz-Vd-iyk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9d-za-93K">
+                                <rect key="frame" x="148" y="138" width="79" height="30"/>
+                                <state key="normal" title="ProductList"/>
+                                <connections>
+                                    <action selector="productListButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeH-aK-iEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qF-P1-WGs">
+                                <rect key="frame" x="140" y="229" width="94" height="30"/>
+                                <state key="normal" title="ProductDetail"/>
+                                <connections>
+                                    <action selector="productDetailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpi-ov-YAy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag3-2K-Y5Z">
+                                <rect key="frame" x="159" y="406" width="57" height="30"/>
+                                <state key="normal" title="Account"/>
+                                <connections>
+                                    <action selector="accountButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsI-CE-pP5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-gZ-c3z">
+                                <rect key="frame" x="162" y="500" width="50" height="30"/>
+                                <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <action selector="signupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kmu-Eh-aes"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8pJ-gZ-c3z" secondAttribute="trailing" constant="147" id="3uc-C6-b5X"/>
+                            <constraint firstItem="C5V-H2-qQ3" firstAttribute="top" secondItem="8qF-P1-WGs" secondAttribute="bottom" constant="59" id="4Me-hm-ORg"/>
+                            <constraint firstItem="W9d-za-93K" firstAttribute="top" secondItem="vhW-Eh-Ako" secondAttribute="bottom" constant="58" id="EUm-IT-V2J"/>
+                            <constraint firstItem="vhW-Eh-Ako" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="HXl-H8-0Zj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8qF-P1-WGs" secondAttribute="trailing" constant="125" id="LKt-bT-MDo"/>
+                            <constraint firstItem="8pJ-gZ-c3z" firstAttribute="top" secondItem="ag3-2K-Y5Z" secondAttribute="bottom" constant="64" id="Rqt-lz-O8J"/>
+                            <constraint firstItem="8pJ-gZ-c3z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="146" id="RxJ-kd-TO1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8pJ-gZ-c3z" secondAttribute="bottom" constant="137" id="UHx-wt-9gh"/>
+                            <constraint firstItem="8qF-P1-WGs" firstAttribute="top" secondItem="W9d-za-93K" secondAttribute="bottom" constant="61" id="Vao-ls-26V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C5V-H2-qQ3" secondAttribute="trailing" constant="149" id="XvC-zC-1tI"/>
+                            <constraint firstItem="C5V-H2-qQ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="aC7-hA-ypr"/>
+                            <constraint firstItem="ag3-2K-Y5Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="143" id="aEh-W7-mO6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vhW-Eh-Ako" secondAttribute="trailing" constant="140" id="jba-tO-1Ns"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W9d-za-93K" secondAttribute="trailing" constant="132" id="m84-hP-M4Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ag3-2K-Y5Z" secondAttribute="trailing" constant="143" id="r8b-s2-1nq"/>
+                            <constraint firstItem="ag3-2K-Y5Z" firstAttribute="top" secondItem="C5V-H2-qQ3" secondAttribute="bottom" constant="58" id="r9l-sL-T7R"/>
+                            <constraint firstItem="W9d-za-93K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="ro6-T3-ND4"/>
+                            <constraint firstItem="8qF-P1-WGs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="rti-26-SKp"/>
+                            <constraint firstItem="vhW-Eh-Ako" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="140" id="tQY-bI-XOx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1rn-rB-O54">
+            <objects>
+                <tabBarController id="HpU-3P-BH6" customClass="ViewController" customModule="delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="9t4-iu-JJo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tX-Ca-Psb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="926"/>
+        </scene>
+    </scenes>
+</document>

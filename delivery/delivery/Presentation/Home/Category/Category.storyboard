@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1mM-wr-oYI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category View Controller-->
+        <scene sceneID="fFR-OK-Lrb">
+            <objects>
+                <viewController id="1mM-wr-oYI" customClass="CategoryViewController" customModule="delivery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="y9P-1F-3m6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9h-UJ-hih">
+                                <rect key="frame" x="15" y="43" width="17" height="22"/>
+                                <state key="normal" image="close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeCategoryList:" destination="1mM-wr-oYI" eventType="touchUpInside" id="Zcb-7y-J5D"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qRA-Jj-pqe">
+                                <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGU-41-F8B">
+                                <rect key="frame" x="50" y="43" width="75" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.02242623731" green="0.02125097657" blue="0.02082559543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wGU-41-F8B" firstAttribute="centerY" secondItem="J9h-UJ-hih" secondAttribute="centerY" id="BxE-lz-NN7"/>
+                            <constraint firstItem="qRA-Jj-pqe" firstAttribute="trailing" secondItem="GhH-ZG-LOf" secondAttribute="trailing" id="DGr-cp-BaI"/>
+                            <constraint firstItem="qRA-Jj-pqe" firstAttribute="bottom" secondItem="GhH-ZG-LOf" secondAttribute="bottom" id="Gpx-Mt-0JP"/>
+                            <constraint firstItem="qRA-Jj-pqe" firstAttribute="leading" secondItem="GhH-ZG-LOf" secondAttribute="leading" id="I41-bb-6Yr"/>
+                            <constraint firstItem="wGU-41-F8B" firstAttribute="leading" secondItem="J9h-UJ-hih" secondAttribute="trailing" constant="18" id="PAE-Z6-Zfa"/>
+                            <constraint firstItem="qRA-Jj-pqe" firstAttribute="top" secondItem="J9h-UJ-hih" secondAttribute="bottom" constant="8" id="V15-hl-7nd"/>
+                            <constraint firstItem="J9h-UJ-hih" firstAttribute="leading" secondItem="GhH-ZG-LOf" secondAttribute="leading" constant="15" id="dPw-q0-q21"/>
+                            <constraint firstItem="qRA-Jj-pqe" firstAttribute="top" secondItem="GhH-ZG-LOf" secondAttribute="top" constant="53" id="mWY-5Y-aeI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GhH-ZG-LOf"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTableView" destination="qRA-Jj-pqe" id="kXL-92-yw6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTj-Ub-pzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="-7.6461769115442282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="17" height="17"/>
+    </resources>
+</document>

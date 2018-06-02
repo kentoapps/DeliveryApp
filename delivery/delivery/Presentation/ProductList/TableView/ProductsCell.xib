@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="177" id="KGk-i7-Jjw" customClass="ProductsCell" customModule="delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="176.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro Yo Low Fat Blueberry Pomegranate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i7-N0-7gb">
+                        <rect key="frame" x="200" y="57" width="159" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="159" id="TGW-Pg-7gY"/>
+                            <constraint firstAttribute="height" constant="48" id="bl9-oi-rCt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK5-up-EA6">
+                        <rect key="frame" x="200" y="113" width="48" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="mwa-ho-pj8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$6.89" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbO-cj-47K" customClass="BaseLabel" customModule="delivery" customModuleProvider="target">
+                        <rect key="frame" x="200" y="138" width="41" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="5ha-zL-isx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vu-2H-Ox4">
+                        <rect key="frame" x="249" y="139" width="30" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="6M0-g3-zZI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1u-j5-8YJ" customClass="BaseButton" customModule="delivery" customModuleProvider="target">
+                        <rect key="frame" x="330" y="11" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Kyb-lJ-Siv"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="LIc-IB-vPx"/>
+                        </constraints>
+                        <state key="normal" image="addcart"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mve-xd-Lhm">
+                        <rect key="frame" x="16" y="6" width="160" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="0Qp-yd-kiv"/>
+                            <constraint firstAttribute="width" constant="160" id="JHT-Xl-Qnv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mve-xd-Lhm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0IS-9l-48G"/>
+                    <constraint firstItem="XK5-up-EA6" firstAttribute="leading" secondItem="Mve-xd-Lhm" secondAttribute="trailing" constant="24" id="5JX-8K-Ucg"/>
+                    <constraint firstItem="7Vu-2H-Ox4" firstAttribute="leading" secondItem="RbO-cj-47K" secondAttribute="trailing" constant="8" id="Drw-D2-394"/>
+                    <constraint firstItem="RbO-cj-47K" firstAttribute="top" secondItem="XK5-up-EA6" secondAttribute="bottom" constant="2" id="Gu7-bQ-se9"/>
+                    <constraint firstItem="8i7-N0-7gb" firstAttribute="top" secondItem="v1u-j5-8YJ" secondAttribute="bottom" constant="10" id="Pyv-tE-aRR"/>
+                    <constraint firstItem="Mve-xd-Lhm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-2.25" id="Rci-EJ-oer"/>
+                    <constraint firstItem="7Vu-2H-Ox4" firstAttribute="top" secondItem="8i7-N0-7gb" secondAttribute="bottom" constant="34" id="Ttz-NO-EZY"/>
+                    <constraint firstItem="8i7-N0-7gb" firstAttribute="leading" secondItem="Mve-xd-Lhm" secondAttribute="trailing" constant="24" id="YNg-6o-eEA"/>
+                    <constraint firstItem="RbO-cj-47K" firstAttribute="leading" secondItem="Mve-xd-Lhm" secondAttribute="trailing" constant="24" id="YRM-23-OLe"/>
+                    <constraint firstItem="v1u-j5-8YJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Yck-Zq-pdq"/>
+                    <constraint firstItem="v1u-j5-8YJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="b9j-lG-S6H"/>
+                    <constraint firstItem="XK5-up-EA6" firstAttribute="top" secondItem="8i7-N0-7gb" secondAttribute="bottom" constant="8" id="phZ-iC-Pxq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="65" y="200.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addcart" width="20" height="22"/>
+    </resources>
+</document>
